@@ -30,19 +30,19 @@ import os
 # import pycurl
 
 
-bot = Client(
-    
-    "bot",
-    api_id=api_id,
-    api_hash=api_hash,
-    bot_token=bot_token)
-
 #bot = Client(
-#    "bot",
-#    bot_token=os.environ.get("BOT_TOKEN"),
-#    api_id=int(os.environ.get("API_ID")),
-#    api_hash=os.environ.get("API_HASH")
-#)
+    
+  #  "bot",
+#    api_id=api_id,
+#    api_hash=api_hash,
+#    bot_token=bot_token)
+
+bot = Client(
+   "bot",
+   bot_token=os.environ.get("BOT_TOKEN"),
+   api_id=int(os.environ.get("API_ID")),
+   api_hash=os.environ.get("API_HASH")
+)
 #auth_users = [ int(chat) for chat in os.environ.get("AUTH_USERS").split(",") if chat != '']
 #sudo_users = auth_users
 #sudo_groups = [ int(chat) for chat in os.environ.get("GROUPS").split(",")  if chat != '']
